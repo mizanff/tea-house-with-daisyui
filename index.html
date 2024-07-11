@@ -23,7 +23,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              'gradient-start': "#FF8938",
+              'gradient-end': "#FF0000",
             },
           },
         },
@@ -37,8 +38,8 @@
   </head>
   <body class="font-manrope">
     <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">
               It's good <br />
@@ -49,10 +50,12 @@
               Tea and Botanical Solutions Supplier Give Optimum <br />
               Satisfaction To Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More
+                <i class="fa-solid fa-arrow-trend-up"></i>
+            </button>
           </div>
           <div>
-            <img src="./images/banner.png" class="max-w-sm" />
+            <img src="./images/banner.png"/>
             <div
               class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"
             >
@@ -66,6 +69,7 @@
         </div>
       </div>
     </header>
+
     <main class="container mx-auto">
       <section class="text-center my-24">
         <h2 class="text-4xl font-extrabold mb-5">Our Featured Products</h2>
@@ -74,7 +78,7 @@
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
         </p>
-        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-24">
           <div
             class="card p-6 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl"
           >
@@ -148,20 +152,93 @@
                 <p class="text-lg font-medium lg:max-w-lg">Premium Quality that makes tea more elegant and more durable when you use it.</p>
             </div>
       </section>
-      <section class="my-24 flex flex-col lg:flex-row gap-10 rounded-xl px-16 py-24 bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
-            <div class="text-5xl font-extrabold space-y-5">
+      <section class="my-24 flex flex-col lg:flex-row gap-10 rounded-xl px-16 py-24 bg-gradient-to-r from-gradient-start to-gradient-end">
+            <div class="flex items-center lg:pr-24 text-5xl font-extrabold">
+                <div class="space-y-6">
                 <h2 class="font-extrabold text-5xl text-[#F4F4F4]">Meet Our Super <br> Clients</h2>
-                <p class="text-lg font-medium text-[#F4F4F4]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                <button class="btn btn-primary text-lg font-bold">Show All</button>
+                <p class="text-lg font-medium text-[#F4F4F4] lg:max-w-3xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <button class="btn bg-white text-[#FF0000] text-lg font-bold">Show All</button>
+                </div>
             </div>
-                <div class="relative p-10 rounded-lg bg-[#FFFFFF]">
-                    <img class="absolute -top-5 -left-5" src="images/client.png" alt="">
+               <div class="relative">
+                <div class="relative z-10 mb-16 p-10 rounded-lg bg-[#FFFFFF] opacity-40">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="images/client.png" alt="">
                     <p class="text-[#777777] text-lg">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                     <h4 class="text-lg mt-5 font-bold text-[#1C1C1C]">Ilham Yuda</h4>
                     <h5 class="#1C1C1C text-lg font-medium">Businessman</h5>
+                    <div class="flex justify-end">
+                        <img src="images/circles.png" alt="">
+                    </div>
                 </div>
+                <div class="absolute z-20  top-40 lg:-left-24 lg:w-[430px] p-10 rounded-lg bg-[#FFFFFF]">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="images/client.png" alt="">
+                    <p class="text-[#777777] text-lg">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                    <h4 class="text-lg mt-5 font-bold text-[#1C1C1C]">Ilham Yuda</h4>
+                    <h5 class="#1C1C1C text-lg font-medium">Businessman</h5>
+                    <div class="flex justify-end">
+                        <img src="images/circles.png" alt="">
+                    </div>
+                </div>
+                <div class="relative z-10 p-10 rounded-lg bg-[#FFFFFF] opacity-40">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="images/client.png" alt="">
+                    <p class="text-[#777777] text-lg">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                    <h4 class="text-lg mt-5 font-bold text-[#1C1C1C]">Ilham Yuda</h4>
+                    <h5 class="#1C1C1C text-lg font-medium">Businessman</h5>
+                    <div class="flex justify-end">
+                        <img src="images/circles.png" alt="">
+                    </div>
+                </div>
+               </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-base-200 text-base-content px:4 lg:px-44 py-10">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav>
+              <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav>
+              <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav>
+              <form>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label>
+                  <div class="join">
+                    <input
+                      type="text"
+                      placeholder="username@site.com"
+                      class="py-4 bg-transparent border-b-2 border-black outline-none" />
+                    <button class="btn btn-primary text-white rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-angle-right"></i></button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+        <div class="mt-12 text-center">
+            <p>Copyright © ${new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+           </div>
+      </footer>
   </body>
 </html>
